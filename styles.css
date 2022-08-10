@@ -220,12 +220,14 @@ body {
     height: 260px;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center; 
+    gap: 30px;
+    
   }
 
   .login {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .checkbutton{
@@ -293,4 +295,24 @@ body {
     padding: 5px;
   }
 
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .navbar ul{
+    height: 200px;
+    margin-top: 100px;
+    font-size: 14px;
+   
+
+  }
+  .login {
+    width: 100%;
+    font-size: 15px;
+    margin-top: 40px;
+  }
 }
