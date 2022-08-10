@@ -27,13 +27,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   background-image: url(img/background-main.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-
+  
 }
 
 .btn {
@@ -61,24 +60,37 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom:1px solid white;
-  top: 0;
-  position: sticky;
   background-color: rgba(5, 7, 12, 0.85);
-  z-index: 1;
+  position: sticky;
+  top: 0;
+  
 }
 
-.before-container::before {
+ .before-container::before {
   content: '';
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 250px;
   background:linear-gradient(to top, #111,transparent);
+} 
+
+.logo {
+  width: 120px;
+  height: 100%;
+
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+
 }
 
 .navbar {
   width: 50%;
-  height: auto;
+  height: 80px;
   display: flex;
   justify-content:flex-end;
   align-items: center;
@@ -126,13 +138,7 @@ body {
 }
 
 
-.section-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
+
 
 .hero {
   width: 50%;
@@ -146,13 +152,15 @@ body {
   
 }
 
-/* .image-hero {
-  width: 50%;
-  height: 400px;
-  background-image: url(img/img-hero.png);
+/* -------About-------------- */
+ .about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
- */
-
 
 .about {
   width: 60%;
@@ -195,7 +203,50 @@ body {
   align-items: center;
 }
 
+.stats {
+  width: 60%;
+  margin-top: 40px;
+  height: 300px;
+  display: flex;
+}
 
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats :first-child{
+  align-items: center;
+}
+
+.stats :nth-child(2) {
+  justify-content: center;
+  align-items: center;
+}
+
+.stats :nth-child(3){
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.item h3 {
+  font-size: 48px;
+  color: orange;
+}
+
+.item p {
+  font-size: 20px;
+  color: white;
+}
+
+
+
+
+
+
+/* --------Medias Queries----------- */
 
 @media(max-width:1062px) {
   .navbar {
@@ -316,3 +367,6 @@ body {
     margin-top: 40px;
   }
 }
+
+
+
