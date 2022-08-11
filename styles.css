@@ -9,7 +9,12 @@
 
 
 body {
-   background-color:#111
+  background-color:#111;
+  
+}
+
+html {
+  scroll-padding-top: 100px;
 }
 
 .checkbutton{
@@ -18,23 +23,6 @@ body {
 
 #check {
   display: none;
-}
-
-
-.before-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url(img/background-main.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  top: -80px;
-  
 }
 
 .btn {
@@ -55,6 +43,11 @@ body {
   color: orange;
 }
 
+
+
+
+/* ------------------Navbar------------- */
+
 .header {
   width: 100%;
   height: 80px;
@@ -62,21 +55,12 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom:1px solid white;
-  background-color: rgba(5, 7, 12, 0.75);
+  background-color: rgba(5, 7, 12, 0.95);
   position: sticky;
   top: 0;
   z-index: 1;
   
 }
-
- .before-container::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 250px;
-  background:linear-gradient(to top,#111,transparent);
-} 
 
 .logo {
   width: 120px;
@@ -107,7 +91,6 @@ body {
   gap: 30px;
 }
 
-
 .login {
   display: flex;
   justify-content: center;
@@ -120,12 +103,9 @@ body {
   color: white;
 }
 
-
 .navbar a:hover , .login a :hover {
   color: orange;
 }
-
-
 
 .fa-user {
   font-size: 13px;
@@ -133,15 +113,40 @@ body {
   
 }
 
+
+/* ---------Main y Hero---------------- */
+
+.before-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/background-main.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  position: relative;
+  top: -80px;
+  
+}
+
+.before-container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background:linear-gradient(to top,#111,transparent);
+} 
+
 .main {
   width: 80%;
   height: 100vh;
   display: flex;
   
 }
-
-
-
 
 .hero {
   width: 50%;
@@ -152,10 +157,12 @@ body {
   justify-content: center;
   gap: 20px;
   font-size: 30px;
-  
+  margin-top: 60px;
 }
 
-/* -------About-------------- */
+
+
+/* ---------About-------------- */
  .about-container {
   width: 100%;
   display: flex;
@@ -244,6 +251,10 @@ body {
   font-size: 20px;
   color: white;
 }
+
+
+
+
 
 
 
