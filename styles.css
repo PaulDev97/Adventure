@@ -81,7 +81,7 @@ html {
   display: flex;
   justify-content:flex-end;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
   
 }
 
@@ -262,8 +262,7 @@ html {
 
 
 /* --------Medias Queries----------- */
-
-@media(max-width:1062px) {
+@media(max-width:962px) {
   .navbar {
     width: 50%;
     height: 100vh;
@@ -318,7 +317,6 @@ html {
 }
  
 }
-
 
 @media (max-width:600px) {
 
