@@ -55,7 +55,7 @@ html {
   justify-content: space-between;
   align-items: center;
   border-bottom:1px solid white;
-  background-color: rgba(5, 7, 12, 0.95);
+  background-color: rgba(5, 7, 12, 0.85);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -123,9 +123,9 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(img/paisajeuno.jpg);
+  background-image: url(img/background.jpg);
   background-repeat: no-repeat;
-  background-position:center;
+  background-position:center center;
   background-size: cover;
   position: relative;
   top: -80px;
@@ -263,10 +263,12 @@ html {
 .item {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  
 }
 
-.stats :first-child{
+.stats :nth-child(1){
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -295,21 +297,50 @@ html {
 /* -------Beneficios-------- */
 .base-container{
   width: 100%;
+  margin: 150px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background:url(img/benefits.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
+
+.base-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background:linear-gradient(to bottom,#111,transparent);
+}
+
+.base-container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 250px;
+  background:linear-gradient(to top,#111,transparent);
+}
+
+
 
 
 .benefits-container {
   width: 60%;
-  
-  padding: 40px;
+  margin: 100px 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px;
   gap: 25px;
   
  
@@ -320,27 +351,43 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 35px;
+  gap: 25px;
   
 }
 .cards {
   display: flex;
   width: 150px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
   padding: 10px;
   gap: 15px;
   border-radius: 10px;
   transition: all 0.3s;
+  
 }
 
-.cards i {
+.cards:hover{
+  transform: scale(1.1);
+  background-color: white;
+}
 
-  font-size: 26px;
-  color: darkgoldenrod;
+.base-container .benefits-container h3 {
+  color:black;
+}
+
+.card-img {
+  width: 100%;
+  height: 100px;
+}
+
+.cards span {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+  background: #efb81e;
 }
 
 .benefits-container h3 {
@@ -352,53 +399,43 @@ html {
 }
 
 
-.cards:hover{
-  transform: scale(1.1);
-}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* ------Galeria--------- */
 
 .grid {
-  width: 100%;
+  width: 90%;
   height: 500px;
   margin: 60px auto;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-auto-rows: 150px ;
   grid-gap: 10px;
+  padding: 5px;
+  
 }
 
 
 .item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
   color: white;
   grid-row: 1/2;
   grid-column: 1/2;
+  color: rgb(241, 165, 22);
 }
 
 .item1 {
- /*  background: url(img/paisaje.jpg);
+  background: url(img/gal_img1.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   grid-row: 2/4;
   grid-column: 1/2;
+  border-radius: 10px;
   
 }
 
@@ -406,49 +443,58 @@ html {
 
 .item2 {
   
- /*  background: url(img/item2.jpg);
+  background: url(img/gal_img2.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   grid-row: 1/3;
   grid-column: 2/3;
+  border-radius: 10px;
   
 }
 .item3 {
  
-/*   background: url(img/item3.jpg);
+  background: url(img/gal_img3.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat; 
   grid-row: 2/4;
   grid-column: 3/4;
+  border-radius: 10px;
 }
 .item4 {
 
-/*   background: url(img/item4.jpg);
+  background: url(img/gal_img4.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   grid-column: 4/5;
-  grid-row:1/3 ;
+  grid-row:1/3;
+  border-radius: 10px;
 }
 .item5 {
-  /* background:url(img/item5.jpg);
+  background:url(img/gal_img5.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 
 .item6 {
-/*  background:url(img/item6.jpg);
+ background:url(img/gal_img6.jpg);
  background-size: cover;
  background-position: center;
- background-repeat: no-repeat; */
+ background-repeat: no-repeat;
+ border-radius: 10px;
+ grid-row: 3/4;
+ grid-column: 2/3;
 }
 .item7 {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 
@@ -458,14 +504,15 @@ html {
 .footer {
   width: 100%;
   height: 300px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
   color: white;
-  /* background-image: url(img/footer.jpg); */
-  background-position: center;
+  background-image: url(img/footer_img.jpg);
+  background-position:bottom center;
   background-size: cover;
   position: relative;
 
@@ -518,7 +565,7 @@ html {
 }
 
 .links a:hover {
-  color: grey;
+  color: orange;
 }
 
 
@@ -568,9 +615,12 @@ align-items: center;
 
 .form {
 width: 40%;
- height: 550px;
-background: rgba(5, 7, 12, 0.40);
- /*  background-image:linear-gradient(rgba(255,255,255,0.472), rgba(255,255,255, 0.365)); */
+height: 550px;
+background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+backdrop-filter: blur(4px);
+border-radius: 10px;
+border: 1px solid rgba(255,255,255,0.18);
+box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 border-radius: 20px;
 box-shadow: 5px 10px 10px 2px rgba(0, 0, 0, 0.60);
 display: flex;
@@ -600,6 +650,7 @@ left:18px;
 bottom: 30px;
 transition: all 0.4s;
 }
+
 
 
 
@@ -641,10 +692,9 @@ color: orange;
 .form-container {
   width: 100%;
   height: 100vh;
-  background:linear-gradient(rgba(5,7,12,0.65), rgba(5,7,12,0.65)),/* url(img/backform.jpg) */;
+  background:linear-gradient(rgba(5,7,12,0.65), rgba(5,7,12,0.65)), url(img/back.jpg);
   background-position: center;
   background-size: cover;
-    
   display: flex;
   justify-content: center;
   align-items: center;
@@ -707,8 +757,6 @@ color: orange;
 }
   
 
-
-
 .count-login{
   color: white;
   font-size: 14px;
@@ -718,6 +766,9 @@ color: orange;
 .count-login a {
   color: orange;
 }
+
+
+
 
 
 
