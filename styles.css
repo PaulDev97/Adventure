@@ -973,16 +973,16 @@ color: orange;
   }
   
   .card-img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 40px;
   }
 
   .benefits-container {
-    width: 90%;
+    width: 80%;
   }
 
   .benefits-container h3 {
-    width: 80%;
+    width: 100%;
     font-size: 18px;
     
   }
