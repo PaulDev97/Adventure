@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  border: 1px solid red;
 }
 
 
@@ -977,16 +978,17 @@ color: orange;
   }
 
   .benefits-container {
-    width: 80%;
+    width: 90%;
   }
 
   .benefits-container h3 {
+    width: 80%;
     font-size: 18px;
-    margin-left: 18px;
+    
   }
 
   .benefits{
-    width: 400px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
