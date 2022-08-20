@@ -6,11 +6,45 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Login</title>
    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 <body>
 
    <div class="login-container">
-      <main>   
+
+      <div class="backmenu">
+         <img src="img/logo.png" alt="">
+         <a href="index.html">Volver al inicio</a>
+      </div>
+
+      <main class="main-login">   
+
+         <div class="login_img">
+
+         </div>
+
+         <div class="login_user">
+            <form class="form_login" action="">
+               <div class="welcome">
+                  <h2>Login</h2> <span>your count</span>
+               </div>
+               <div class="login_box">
+                  <label for="usuario"><i class="fa-solid fa-user-large"></i></label> 
+                  <input id="usuario" type="text" placeholder="Usuario" required>
+               </div>
+
+               <div class="login_box">
+                  <label for="password"><i class="fa-solid fa-unlock-keyhole"></i></label>
+                  <input id="password" type="password" placeholder="Contraseña" required>
+               </div>
+
+               <a href="#">¿Olvidaste la contraseña?</a>
+               <a href="formulario.html">No tengo cuenta</a>
+
+               <button class="login_btn">Sign Up</button>
+                  
+            </form>
+         </div>
          
       </main>
    </div>
