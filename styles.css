@@ -365,7 +365,7 @@ html {
 
 
 .benefits-container {
-  width: 50%;
+  width: 60%;
   margin: 100px 0;
   background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
   backdrop-filter: blur(10px);
@@ -934,9 +934,9 @@ color: orange;
 }
 
 .benefits{
-  width:100%;
   display: flex;
-  
+  width: 80%;
+  flex-wrap: wrap;
 }
 
 /* ----Galeria-------- */
@@ -965,11 +965,10 @@ color: orange;
 
   
   .main {
-  
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
   }
 
   .image-hero{
@@ -978,8 +977,8 @@ color: orange;
     display: grid;
     justify-content: center;
     grid-template-columns: 150px 150px;
-    grid-gap: 10px;
-    
+    margin: 0 50px;
+   
     margin-right: 50px;
   }
 
@@ -991,7 +990,8 @@ color: orange;
     height: 200px;
     justify-content: center;
     align-items: center;
-    
+  
+    margin: 0 0 ;
   }
 
 
@@ -1060,13 +1060,17 @@ color: orange;
   }
 
   .cards {
-    width: 130px;
+    width: 120px;
     height: 160px;
     padding: 10px;
     margin: 15px 0;
     border-radius: 10px;
     transition: all 0.3s;
     font-size: 16px;
+  }
+
+  .cards p {
+    font-size: 14px;
   }
   
   .card-img {
@@ -1075,7 +1079,7 @@ color: orange;
   }
 
   .benefits-container {
-    width: 90%;
+    width: 80%;
   }
 
   .benefits-container h3 {
@@ -1125,7 +1129,7 @@ color: orange;
 
   .grid .btn {
     width: 100px;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
   }
   
