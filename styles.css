@@ -151,14 +151,14 @@ html {
 
 .hero {
   width: 50%;
-  height: 500px;
+  height: 300px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
   font-size: 30px;
-  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .image-hero{
